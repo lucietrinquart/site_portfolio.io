@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.ecran{
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/fond.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    float: right;
+    justify-content: space-between;
+}
+.menu a{
+    color: white;
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+.menu a:hover{
+    color: rgb(240, 90, 195);
+}
+.nav{
+    margin-top: 0;
+    margin-left: 0.7rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.carte{
+    width: 90%;
+    max-width: 440px;
+    color: aliceblue;
+    text-align: center;
+    padding: 40px 30px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+.carte img{
+    border-radius: 50%;
+}
+.carte h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 20px;
+}
+.carte p{
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+
+.carte .reseau img{
+    border-radius: 50%;
+    margin: 10px 5px;
+    transition: background 0.5s;
+}
+.carte .reseau img:hover{
+    background-color: rgb(240, 90, 195);
+}
+.bouton{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: rgb(255, 200, 200);
+    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    padding: 10px 30px;
+    border-radius: 30px;
+
+
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid  rgb(255, 200, 200);
+    cursor: pointer;
+}
+footer{
+    background-color: rgba(255, 200, 200, 0.5);
+    border-top: solid rgb(255, 200, 200);
+}
+
+.button {
+    background-color: #ffe2e7;
+    border: solid 2px #ffc9d2;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+    margin: 30px 0 10px;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+  
+  form{
+    text-align: center;
+    padding: 5px;
+  }
+  
+  
+  #submit{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #e587b3;
+  }
+  
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #4c4444;
+}
+.about img{
+    height: auto;
+    width: 430px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #e587b3;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid  #e587b3;
+    cursor: pointer;
+}
+.service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 300px;
+    width: 250px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.card .button{
+    background-color: #e587b3;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid  #e587b3;
+    cursor: pointer;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2rem;
+    text-align: center;
+}
+span{
+    color: rgb(216, 88, 88);
+}
+/*
+#projets{
+    background-color: #191919;
+    width: 100%;
+    padding: 100px 0px;
+}
+#projets .projets{
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0; 
+}
+#projets .projets-header h1{
+    margin-bottom: 50px;
+    color: white;
+}
+#projets .all-projets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projets .projets-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projets .projets-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    color: white;
+
+}
+#projets .projets-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+}
+#projets .projets-info h2{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+#projets .projets-info p{
+    color:black
+}
+#projets .projet-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#projets .projet-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    opacity: 0.7;
+}
+#projets .projet-img img{
+    transition: .3s ease ;
+}
+#projets .projets-items:hover .projet-img img{
+    transform: scale(1.1);
+}
+*/
+.images .projets-header h1{
+    margin-bottom: 50px;
+    color: white;
+}
+.images{
+
+    background-color: #191919;
+}
+.images .image-card .image-right{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    color: white;
+}
+.images .image-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images .image-card .image-left{
+    margin-right: 40px;
+}
+.images .image-card .image-left img{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
