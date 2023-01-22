@@ -1,0 +1,23 @@
+
+
+header{/*sert à choisir l'endroit symblé*/
+    background-color: black;/*sert à choisir la couleur*/
+}
+ div#content div{
+    display: inline-block;
+    width: 48%;/*choisir l'endroit où mettre le texte la à droite*/
+    vertical-align: top;
+ }
+
+ div#content div.leftbox{
+     vertical-align: top;
+
+ }
+
+ div#content div.rightbox{
+
+ }
+ body{
+     font-family: police1, police2, police3, plolive4, serif;/*essaie de mettre une police*/
+ }
+

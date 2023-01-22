@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="include/css/style.css">
+  <title>SAÉ 105</title>
+</head>
+
+	<!--Haut de la page, qui contient le menu déroulant avec les types de pokémon, le bouton qui redirige vers l'accueil et d'autres sites-->
+  <header>
+    <nav>
+      <!--Changement de l'image quand la souris passe par dessus-->
+      <a href="index.html"><img id="pokeball" src=img/pokeball.png onmouseover="changeImage(this)"; onmouseout="changeImage1(this)"; />
+      </a>
+      <!--Cette balise sert à renvoyer vers le haut quand on se trouve en bas de la page-->
+      <span id="haut"></span>
+      <p id="chanson">
+        <!--Chanson du générique-->
+        Cliquez sur moi :)
+        <audio controls src ="generique_pokemon.mp3"> Générique Pokémon</audio>
+    </p>
+      <ul id="menu-deroulant">
+        <li class="menuderoulant">
+          <a href="#">Types</a> <!--Liste des types des pokémons-->
+          <ul class="sous-menu">
+            <li id="liste-types">
+            </li>
+          </ul>
+        </li>
+        <li class="menuderoulant">
+          <a href="#">Liens</a> <!--Liens vers les sites pokémons et google-->
+          <ul class="sous-menu">
+            <li>
+              <a href="https://fr.wikipedia.org/wiki/Satoshi_Tajiri">Leur créateur</a>
+			</li>
+        	<li> <a href="https://www.pokemon.com">Pokemon</a>
+			</li>
+          </ul>
+        </li>
+        <li class="menuderoulant">
+          <a href="#">A propos de nous</a>
+          <ul class="sous-menu">
+            <li><a href="#nous_contacter">Nous contacter</a></li> <!--l'ID nous renvoie au formulaire en bas de la page-->
+          </ul>
+        </li>
+      </ul>
+      <div id="searchbar">
+        <input type="search" id="search" value="" placeholder="recherchez un pokemon" onchange="ouvrirPage()">
+      </div>
+    </nav>
+  </header>
+
+  <!--Ici, la liste de tous les pokemons, jusqu'en bas de la page-->
+  <h1>Attrapez-les tous !</h1>
+  <div id="liste-pokemon">
+  </div>
+  <body background="background.jpg">
+	<script src="include/js/data.js" defer></script>
+	<script src="include/js/main.js" defer></script>
+  </body>
+
+  <!--Bas de la page contenant le formulaire-->
+<footer>
+    <h2 id="nous_contacter">Nous contacter</h2>
+    <form>
+      <input placeholder="Votre nom "> <!--Nom à renseigner-->
+    </form>
+    <form>
+      <input type="email" id="email" name="email" placeholder="E-mail"> <!--Email à renseigner-->
+    </form>
+    <form>
+      <!--Commentaires à renseigner-->
+      <textarea type="text" id="commentaire" name="commentaire"rows="3" cols="25">
+      </textarea>
+    </form>
+    <form>
+      <input type="submit" id="submit" value="Envoyer"> <!--Bouton pour valider le formulaire-->
+    </form>
+    <form><button><a href="#haut">remonter</a></button></form> <!--Bouton qui sert à nous renvoyer vers le haut de la page-->
+  </footer>
+</html>

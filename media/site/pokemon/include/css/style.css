@@ -1,0 +1,315 @@
+
+/********************************************personnalisation du haut de page*******************************************/
+
+/*audio placé au dessus dans le haut de la page*/
+audio{
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+
+#chanson {
+  float : right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/**********personalisation du nav************/
+nav {
+  background-color: rgba(180, 0, 0, 0.595);
+  display: block;
+  border-bottom: 4px ridge rgb(180, 0, 0);
+  border-top: 4px ridge rgb(180, 0, 0);
+  padding: 0;
+  margin: 0;
+}
+
+
+
+nav ul {
+display: flex;
+flex-wrap: wrap;
+background-color: wheat;
+
+}
+
+nav ul li{
+  list-style-type: none;
+  text-align: center;
+  background-color: wheat;
+}
+
+nav ul li a {
+  text-decoration: none;
+background-color: wheat;
+}
+
+/**************personnalisation de la liste dans le nav**************/
+
+
+ul#liste-types li {
+  display:block;
+  padding-inline: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1#liste-types {
+  padding: 200px;
+}
+
+#image{
+  float: right;
+  border-radius: 5px;
+  background-color: wheat;
+  margin-right: 300px;
+
+}
+
+#description{
+  padding-right:500px ;
+}
+
+#pokeball{
+  width: 50px;
+  height:50px;
+  float:left;
+  box-shadow: none;
+}
+
+/*******************barre de recherche********************/
+
+#search {
+  padding: 5px;
+  border: solid 3px rgb(113, 0, 0);
+  border-radius: 7px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+/************************************************La liste des types des pokemons**********************************/
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 85, 85);
+  float: center;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px black;
+}
+
+#liste-pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  opacity: 1;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(84, 79, 79, 0.716);
+
+}
+
+/***************************************Description des pokemons selon le type****************************************/
+
+p#ecrit {
+  background-color: rgba(112, 111, 111, 0.648);
+  color:white;
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  border: solid 3px black;
+  margin : 50px 50px;
+  padding: 20px;
+}
+
+/************************************Coontenu de l'image et les interactions avec********************************/
+.container:hover img{
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.container {
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  background-color: wheat;
+}
+
+.nomPoke {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(29%, -300%);
+  text-align: center;
+}
+
+.container:hover .nomPoke {
+  opacity: 1;
+}
+
+.text {
+  background-color: #aa041a;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 16px 32px;
+}
+
+/**************************************Infos et descriptions****************************************/
+#informations{
+  font-style: italic;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 1000;
+  padding: 15px;
+}
+
+#description{
+  float: right;
+  background-color: wheat;
+  border: solid rgb(180, 0, 0);
+  padding:20px;
+  margin: 20px;
+}
+
+div#image img{
+  width: 150px;
+  height: 150px;
+}
+
+#liste{
+  list-style: none;
+  flex-wrap: wrap;
+  border:solid;
+  margin-left: 15px;
+  padding: 15px;
+  background-color:white;
+  font-family: 'Courier New', Courier, monospace;
+  color:black; 
+  border-radius: 5px;
+  border: dashed; 
+  width: 35%;
+  float: left;
+  border-color: red;
+}
+
+
+/*****************************************************body******************************************/
+
+body{
+  background-attachment: fixed;
+  background-size: 1600px 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2{
+  text-align: center;
+  font-family:OCR A Std, monospace;
+  color:wheat;
+}
+
+/************************************************formulaire***************************************/
+footer{
+  background-color: rgba(134, 0, 0, 0.593);
+  border-top: solid red;
+}
+
+button {
+  background-color: #ffe2e7;
+  border: solid 2px rgb(182, 0, 0);
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: black;
+
+}
+
+form{
+  text-align: center;
+  padding: 5px;
+}
+
+
+#submit{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #aa041a;
+}
+
+/****************personalisation du menu déroulant (avec les types et autres)****************/
+
+#menu-deroulant, #menu-deroulant ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#menu-deroulant {
+  display: table;
+  padding: 15px;
+  background-color:  rgba(180, 0, 0, 0);
+}
+
+#menu-deroulant li {
+  display: inline-block;
+  border-bottom: solid 2px;
+  text-align: center;
+  border-color: rgb(255, 146, 146);
+  padding: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+#menu-deroulant ul li {
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+#menu-deroulant a {
+  display: block;
+  color:red;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+#menu-deroulant ul {
+  position :absolute;
+  left: -999em;
+  text-align: center;
+  z-index: 1000;
+}
+
+#menu-deroulant li:hover ul {
+  left: auto;
+}
+
+#sous-menu{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a:link{
+  text-decoration: none;
+  color: none;
+}
+
+#imgtype {
+  box-shadow: none;
+}

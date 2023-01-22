@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="include/css/style.css">
+	<title>SAÉ 105 | </title>
+</head>
+
+<header>
+	<div>
+	<nav>
+		<a href="index.html"><img id="pokeball" src="img/pokeball.png" alt="pokeball"></a>
+            <p id="chanson">
+              Cliquez-moi :)
+              <audio controls src ="generique_pokemon.mp3"> Générique Pokémon</audio>
+          </p>
+		<ul id="menu-deroulant">
+        <li class="menuderoulant">
+          <a href="#">Types</a> <!--Liste des types des pokémons-->
+          <ul class="sous-menu">
+            <li id="liste-types">
+            </li>
+          </ul>
+        </li>
+        <li class="menuderoulant">
+          <a href="#">Liens</a> <!--Liens vers les sites pokémons et google-->
+          <ul class="sous-menu">
+            <li>
+              <a href="https://fr.wikipedia.org/wiki/Satoshi_Tajiri">Leur créateur</a>
+			</li>
+        	<li> <a href="https://www.pokemon.com">Pokemon</a>
+			</li>
+          </ul>
+        </li>
+        <!--<li class="menuderoulant">
+          <a href="#">A propos de nous</a>
+          <ul class="sous-menu">
+            <li>Nous contacter</li>
+          </ul>
+        </li>-->
+      </ul>
+	</nav>
+	</div>
+</header>
+
+<body background="background.jpg">
+	<h1></h1>
+  <p id="ecrit"></p> <!--Mets la description pour les types de pokémons-->
+	<ul id="liste-pokemon"></ul>
+	<ul id="liste-types"></ul>
+	<script src="include/js/data.js" defer></script>
+	<script src="include/js/type.js" defer></script>
+</body>
+</html>
