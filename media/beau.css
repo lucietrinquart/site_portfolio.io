@@ -1,0 +1,43 @@
+.tête{
+    background-image: url(nature.jpg);
+    background-attachment: fixed;
+    height: 600px;
+}
+
+
+li{
+    float: right;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding:20px;
+}
+
+li#logo{
+    float: left;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 100px;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+div{
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}

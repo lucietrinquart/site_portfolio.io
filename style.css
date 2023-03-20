@@ -26,11 +26,12 @@
     transition: background 0.5s;
 }
 .menu a:hover{
-    color: rgb(240, 90, 195);
+    color: rgb(197, 108, 57);
 }
 .nav{
     margin-top: 0;
     margin-left: 0.7rem;
+    background-color: #101010;
 }
 a{
     text-decoration: none;
@@ -68,7 +69,7 @@ a{
     transition: background 0.5s;
 }
 .carte .reseau img:hover{
-    background-color: rgb(240, 90, 195);
+    background-color: rgb(197, 108, 57) ;
 }
 .bouton{
     text-decoration: none;
@@ -76,7 +77,7 @@ a{
     font-size: 20px;
     font-weight: 700;
     background: rgb(255, 200, 200);
-    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    background-image: linear-gradient(60deg, rgb(119, 72, 2), rgb(197, 108, 57) 100%);
     padding: 10px 30px;
     border-radius: 30px;
 
@@ -84,17 +85,17 @@ a{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid  rgb(255, 200, 200);
+    border: 2px solid  rgb(197, 108, 57) ;
     cursor: pointer;
 }
 footer{
     background-color: rgba(255, 200, 200, 0.5);
-    border-top: solid rgb(255, 200, 200);
+    border-top: solid rgb(197, 108, 57) ;
 }
 
 .button {
-    background-color: #ffe2e7;
-    border: solid 2px #ffc9d2;
+    background-color: rgb(197, 108, 57) ;
+    border: solid 2px rgb(119, 72, 2);
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -118,7 +119,7 @@ footer{
     width: 90px;
     height: 30px;
     border-radius: 5px;
-    background-color: #e587b3;
+    background-color: rgb(197, 108, 57);
   }
   
 .about{
@@ -162,7 +163,7 @@ footer{
     margin-bottom: 45px;
 }
 button{
-    background-color: #e587b3;
+    background-color: rgb(197, 108, 57);
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -173,7 +174,7 @@ button{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid  #e587b3;
+    border: 2px solid  rgb(197, 108, 57);
     cursor: pointer;
 }
 .service{
@@ -217,7 +218,7 @@ h5{
     margin-bottom: 25px;
 }
 .card .button{
-    background-color: #e587b3;
+    background-color: rgb(197, 108, 57);
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -228,7 +229,7 @@ h5{
 }
 .card .button:hover{
     background-color: transparent;
-    border: 2px solid  #e587b3;
+    border: 2px solid  rgb(119, 72, 2);
     cursor: pointer;
 }
 .section-title{
@@ -241,7 +242,7 @@ h5{
     text-align: center;
 }
 span{
-    color: rgb(216, 88, 88);
+    color: rgb(119, 72, 2);
 }
 /*
 #projets{
@@ -335,13 +336,14 @@ span{
 }
 .images .image-card .image-right{
     padding: 30px;
+    padding-bottom: 10px;
     flex-basis: 50%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(60deg, rgb(164, 126, 187), rgb(209, 93, 174) 100%);
+    background-image: linear-gradient(60deg, rgb(179, 120, 84), rgb(233, 178, 146) 100%);
     color: white;
 }
 .images .image-card{
@@ -355,4 +357,86 @@ span{
 .images .image-card .image-left img{
     padding-left: 20px;
     padding-bottom: 10px;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #menu-deroulant {
+    display: table;
+    padding: 15px;
+    background-color:  rgba(180, 0, 0, 0);
+  }
+  
+  #menu-deroulant li {
+    display: inline-block;
+
+
+    padding: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  #menu-deroulant ul li {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+  }
+
+
+  #menu-deroulant a {
+    display: block;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+
+  #menu-deroulant a:hover{
+    color: rgba(255, 102, 0, 0.544) ;
+    cursor: pointer;
+}
+  
+  #menu-deroulant ul {
+    position :absolute;
+    left: -999em;
+    z-index: 1000;
+  }
+  
+  #menu-deroulant li:hover ul {
+    left: auto;
+  }
+  
+  #sous-menu{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  a:link{
+    text-decoration: none;
+    color: none;
+  }
+nav{
+    background-color: #191919;
+}
+  
+  #imgtype {
+    box-shadow: none;
+  }
+
+.apdm{
+    height:300px;
+     width:50;
+}
+@media screen and (max-width: 800px) {
+    .apdm{ width: 100%;} 
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .apdm{ width: 33.33%;} 
 }

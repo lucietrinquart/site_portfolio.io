@@ -8,16 +8,42 @@
         <title>Portfolio carte de visite</title>
         <link rel="stylesheet" href="style.css">
         <body>
-            <div class="menu">
-                <span id="haut"></span>
-                <div class="navbar">
-                    <a href="index.html" class="nav" >Accueil</a>
-                    <a href="animation.html" class="nav" >Mes animations</a>
-                    <a href="dessins.html" class="nav" >Mes dessins</a>
-                    <a href="Ricci.html" class="nav" >Mes Rapports</a>
-                    <a href="mailto:lucie.trinquart@etu.univ-amu.fr" class="nav" >Contact</a>
-                </div>
-            </div>
+            <nav>
+                <ul id="menu-deroulant">
+                    <li class="menuderoulant">
+                        <a href="index.html">Accueil</a> <!--Liste des types des pokémons-->
+                        <ul class="sous-menu">
+                          <li id="liste-types">
+                          </li>
+                        </ul>
+                      </li>
+                    <li class="menuderoulant">
+                      <a href="#">Mes projets personnels</a> <!--Liste des types des pokémons-->
+                      <ul class="sous-menu">
+                        <li>
+                            <a href="animation.html">Mes animations</a>
+                          </li>
+                          <li> <a href="dessins.html">Mes dessins</a>
+                          </li>
+                        <li id="liste-types">
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menuderoulant">
+                      <a href="#">Mes projets professionels </a> <!--Liens vers les sites pokémons et google-->
+                      <ul class="sous-menu">
+                        <li>
+                          <a href="Ricci.html">Mes rapports</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menuderoulant">
+                      <a href="#">A propos de moi</a>
+                      <ul class="sous-menu">
+                      </ul>
+                    </li>
+                  </ul>
+            </nav>
             <section class="images">
                 <div class="projets-header">
                     <h1 class="section-title"> Mes sites</h1>
@@ -27,20 +53,19 @@
                         <img src="media/2eme.png" alt="photo" height="200px" width="400">
                     </div>
                     <div class="image-right">
-                        <h1>Mon site 1</h1>
-                        <p>On m'avait demandé de créer un site où nous devions mettre tous 
-                            mes cours de numérique science de l'informatique (NSI)</p>
+                        <h1>Mon premier site</h1>
+                        <p>C'est la toute première fois que je touchais au CSS et à l'HTML. J'y ai mis des heures pour un résultat qui m'était à l'époque très satisfaisant. Je me rappellerai toujours des sensations que j'ai ressentis à chaque fois que j'arrivais à aboutir à ce que je voulais faire. J'y ai appris énormement de notion mais surtout j'ai appris ce que je comptais faire: devenir web designeuse. Je n'arrivais plus à sortir ce rêve de ma tête et j'ai donc continué à en apprendre plus sur la manière de faire des sites. </p>
                             <a href="media/site/test de la page.html" target="_blank">cliquez ici pour voir</a>
                     </div>
                 </div>
                 <div class="image-card">
                     <div class="image-left">
-                        <img src="media/site cv.png" alt="photo" height="200px" width="400">
+                        <img src="media/enfin_un_site_beau.png" alt="photo" height="200px" width="400">
                     </div>
                     <div class="image-right">
-                        <h1>Mon site 2</h1>
-                        <p>En première année de M.M.I. nous devions faire un C.V. en utilisant le HTML. Je n'ai pas pu retrouver les photos qui étaient dedans. Nous avions comme consignes de savoir faire un tableau et d'utiliser les balises ul et ol. Ce site n'était pas fait pour être beau. </p>
-                        <a href="media/site/cv.html" target="_blank">cliquez ici pour voir</a>
+                        <h1>La continuité</h1>
+                        <p>J'arrive enfin à avoir un résultat convenable. J'arrive à férer le HTML mais surtout le CSS pour le rendre plus agréableà l'oeil. J'ai créé ce site dans un exerccie pour en apprendre plus sur comment bien arranger un site. C'est un des premire site ou je commence à comprendre comment bien manupuler ces deux languages.</p>
+                        <a href="media/site/enfin_un_beau_site.html" target="_blank">cliquez ici pour voir</a>
                     </div>
                 </div>
                 <div class="image-card">
@@ -48,10 +73,8 @@
                         <img src="media/pokemon.png" alt="photo" height="200px" width="400">
                     </div>
                     <div class="image-right">
-                        <h1>Mon site 3</h1>
-                        <p>Site complet sur le thème de Pokémon fait en groupe. Le squelette était déjà donné et nous devions 
-                            faire le design du site. Pour ma part j'ai fait la barre de recherche, la description qui s'affiche
-                            pour les différents types de Pokémons.</p>
+                        <h1>Le Pokedex</h1>
+                        <p>Nous devions faire en groupe un site pokemon. J'ai adoré faire ce site. Trouver les bonnes idées et réussir à les excécuté. Nous devions manipuler l'HTML le CSS et le JacaScript. Nous avions déjà une maquette donner par le proffesseur et nous devions l'améliorer. De mon côté j'ai réussi à mettre le bouton des évolutions, de la pokeball qui change d'image lorsqu'on passe le curseur dedans et globalement l'esthétique du site.</p>
                             <a href="media/site/pokemon/index.html" target="_blank">cliquez ici pour voir</a>
                     </div>
                 </div>

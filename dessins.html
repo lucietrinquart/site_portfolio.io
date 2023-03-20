@@ -8,16 +8,44 @@
         <title>Portfolio carte de visite</title>
         <link rel="stylesheet" href="style.css">
         <body>
-            <div class="menu">
-                <span id="haut"></span>
-                <div class="navbar">
-                    <a href="index.html" class="nav" >Accueil</a>
-                    <a href="animation.html" class="nav" >Mes animations</a>
-                    <a href="mes_sites.html" class="nav" >Mes sites</a>
-                    <a href="Ricci.html" class="nav" >Mes Rapports</a>
-                    <a href="mailto:lucie.trinquart@etu.univ-amu.fr" class="nav" >Contact</a>
-                </div>
-            </div>
+            <nav>
+                <ul id="menu-deroulant">
+                    <li class="menuderoulant">
+                        <a href="index.html">Accueil</a> <!--Liste des types des pokémons-->
+                        <ul class="sous-menu">
+                          <li id="liste-types">
+                          </li>
+                        </ul>
+                      </li>
+                    <li class="menuderoulant">
+                      <a href="#">Mes projets personnels</a> <!--Liste des types des pokémons-->
+                      <ul class="sous-menu">
+                        <li>
+                            <a href="animation.html">Mes animations</a>
+                          </li>
+                          <li> <a href="mes_sites.html">Mes sites</a>
+                          </li>
+                        <li id="liste-types">
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menuderoulant">
+                      <a href="#">Mes projets professionels </a> <!--Liens vers les sites pokémons et google-->
+                      <ul class="sous-menu">
+                        <li>
+                            <a href="Ricci.html">Mes rapports</a>
+                        </li>
+                        <li> <a href="mes_sites.html">Mes sites</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menuderoulant">
+                      <a href="#">A propos de moi</a>
+                      <ul class="sous-menu">
+                      </ul>
+                    </li>
+                  </ul>
+            </nav>
             <section class="images">
                 <div class="projets-header">
                     <h1 class="section-title"> Mes dessins</h1>
