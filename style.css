@@ -184,7 +184,9 @@ button:hover{
 .service{
     background: #101010;
     width: 100%;
-    padding: 100px 0px;
+
+    margin: 0 auto; /* centrez horizontalement le contenu */
+    padding: 100px; /* espacez le contenu du haut et du bas */
 }
 .title h2{
     color: white;
@@ -194,13 +196,25 @@ button:hover{
 }
 .box{
     display: flex;
+    flex-direction: row; /* affiche les éléments en ligne sur les grands écrans */
+    flex-wrap: wrap; /* passe les éléments à la ligne si l'espace est insuffisant */
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
     min-height: 400px;
 }
-.card{
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      flex-direction: column; /* affiche les éléments en colonne sur les petits écrans */
+    }
+  }
+
+.card {
     height: 300px;
-    width: 250px;
+    width: 100%; /* utilise la largeur disponible pour chaque élément */
+    max-width: 300px; /* limite la largeur maximale de chaque élément */
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -208,7 +222,19 @@ button:hover{
     position: relative;
     overflow: hidden;
     text-align: center;
-}
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      width: calc(33.33% - 30px); /* affiche 3 éléments par ligne sur les grands écrans */
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .card {
+      width: calc(25% - 30px); /* affiche 4 éléments par ligne sur les très grands écrans */
+    }
+  }
 h5{
     color: white;
     font-size: 23px;
@@ -247,6 +273,59 @@ h5{
 span{
     color: rgb(119, 72, 2);
 }
+/* Styles pour les écrans de taille moyenne */
+@media screen and (max-width: 800px) {
+    .title h2 {
+      font-size: 50px;
+    }
+    .card {
+      height: 250px;
+      width: 200px;
+      padding: 10px 20px;
+    }
+    h5 {
+      font-size: 18px;
+    }
+    .pra p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .card .button {
+      font-size: 14px;
+      padding: 7px 16px;
+    }
+    .section-title {
+      font-size: 3em;
+      letter-spacing: 1em;
+    }
+  }
+  
+  /* Styles pour les écrans de petite taille */
+  @media screen and (max-width: 480px) and (min-width: 20px) {
+    .title h2 {
+      font-size: 40px;
+    }
+    .card {
+      height: 200px;
+      width: 150px;
+      padding: 10px 15px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+    .pra p {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .card .button {
+      font-size: 12px;
+      padding: 5px 12px;
+    }
+    .section-title {
+      font-size: 2rem;
+      letter-spacing: 0.5em;
+    }
+  }
 /*
 #projets{
     background-color: #191919;
@@ -393,7 +472,6 @@ span{
     padding-bottom:5px;
   }
 
-
   #menu-deroulant a {
     display: block;
     color:white;
@@ -458,7 +536,7 @@ nav{
 }
 
 @media screen and (max-width: 64em) {
-    .about-text h5 {font-size: 10%;}  
+    .about-text h5 {font-size: 40%;}  
 }
 
 
@@ -466,24 +544,3 @@ nav{
     .button {font-size: 10%;}  
 }
 
-@media screen and (max-width: 800px) {
-    .card{height:300px;
-        width:250px;} 
-}
-
-@media screen and (max-width: 1200px) and (min-width: 20px) {
-    .card{height:400px;
-        width:200px;}  
-}
-
-@media screen and (max-width: 64em) {
-    .pra p {font-size: 5%;}  
-}
-
-@media screen and (max-width: 64em) {
-    h5 {font-size: 10%;}  
-}
-
-@media screen and (max-width: 64em) {
-    .title h2 {font-size: 70%;}  
-}
