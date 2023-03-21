@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <video width="320" height="240" controls>
-            <source src="media/Lucie_Trinquart_TP4_cv_motion_design.mp4" type=video/mp4>
-        </video>
-    </section>
+    <nav>
+        <ul id="menu-deroulant">
+            <li class="menuderoulant">
+                <a href="index.html">Accueil</a> <!--Liste des types des pokémons-->
+                <ul class="sous-menu">
+                  <li id="liste-types">
+                  </li>
+                </ul>
+              </li>
+            <li class="menuderoulant">
+              <a href="#">Mes projets personnels</a> <!--Liste des types des pokémons-->
+              <ul class="sous-menu">
+                <li>
+                    <a href="animation.html">Mes animations</a>
+                  </li>
+                  <li> <a href="dessins.html">Mes dessins</a>
+                  </li>
+                <li id="liste-types">
+                </li>
+              </ul>
+            </li>
+            <li class="menuderoulant">
+              <a href="#">Mes projets professionels </a> <!--Liens vers les sites pokémons et google-->
+              <ul class="sous-menu">
+                <li>
+                  <a href="Ricci.html">Projet en groupe</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </nav>
     <section class="about">
         <div class="main">
             <img src="media/prof.png" class="apdm">
@@ -28,6 +54,10 @@
                 <a href="mailto:lucie.trinquart@etu.univ-amu.fr"><button type="button">A propos de moi</button></a>
             </div>
         </div>
+    </section>
+    <section>
+        <video class="video" width="320" height="240" controls autoplay src="media/Lucie_Trinquart_TP4_cv_motion_design.mp4" type=video/mp4>
+        </video>
     </section>
 </body>
 </html>

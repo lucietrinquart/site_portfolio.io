@@ -441,6 +441,17 @@ span{
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .images .image-card {
+        flex-direction: column;
+    }
+
+    .images .image-card .image-left,
+    .images .image-card .image-right {
+        flex-basis: 100%;
+    }
+}
+
 #menu-deroulant, #menu-deroulant ul {
     padding: 0;
     margin: 0;
@@ -544,3 +555,9 @@ nav{
     .button {font-size: 10%;}  
 }
 
+.video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+}
