@@ -485,6 +485,17 @@ span{
 
   #menu-deroulant a {
     display: block;
+
+    background-color: #191919;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+
+  #menu-deroulant .a {
+    display: block;
+
+    background-color:#4c4444;
     color:white;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -515,6 +526,10 @@ span{
   }
 nav{
     background-color: #191919;
+}
+
+.moi{
+  background-color: #4c4444;
 }
   
   #imgtype {

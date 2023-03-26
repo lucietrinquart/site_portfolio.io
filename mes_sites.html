@@ -8,42 +8,60 @@
         <title>Portfolio carte de visite</title>
         <link rel="stylesheet" href="style.css">
         <body>
-            <nav>
-                <ul id="menu-deroulant">
-                    <li class="menuderoulant">
-                        <a href="index.html">Accueil</a> <!--Liste des types des pokémons-->
+          <nav>
+            <ul id="menu-deroulant">
+                <li class="menuderoulant">
+                    <a href="index.html">Accueil</a> <!--Liste des types des pokémons-->
+                    <ul class="sous-menu">
+                      <li id="liste-types">
+                      </li>
+                    </ul>
+                  </li>
+                <li class="menuderoulant">
+                  <a href="#">Mes projets personnels</a> <!--Liste des types des pokémons-->
+                  <ul class="sous-menu">
+                    <li>
+                        <a href="animation.html">Mes animations</a>
+                      </li>
+                      <li>
+                        <a href="dessins.html">Mes dessins</a>
                         <ul class="sous-menu">
-                          <li id="liste-types">
+                          <li>
+                            <a href="dessins-mangas.html">Mangas</a>
+                          </li>
+                          <li>
+                            <a href="dessins-realisme.html">Réalisme</a>
+                          </li>
+                          <li>
+                            <a href="dessins-numérique.html">Dessins numériques</a>
+                          </li>
+                          <li>
+                            <a href="dessins-logo.html">Logos</a>
                           </li>
                         </ul>
                       </li>
-                    <li class="menuderoulant">
-                      <a href="#">Mes projets personnels</a> <!--Liste des types des pokémons-->
-                      <ul class="sous-menu">
-                        <li>
-                            <a href="animation.html">Mes animations</a>
-                          </li>
-                          <li> <a href="dessins.html">Mes dessins</a>
-                          </li>
-                        <li id="liste-types">
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menuderoulant">
-                      <a href="#">Mes projets professionels </a> <!--Liens vers les sites pokémons et google-->
-                      <ul class="sous-menu">
-                        <li>
-                          <a href="Ricci.html">Projet en groupe</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="menuderoulant">
-                      <a href="a_propos.html">A propos de moi</a>
-                      <ul class="sous-menu">
-                      </ul>
+                    <li id="liste-types">
                     </li>
                   </ul>
-            </nav>
+                </li>
+                <li class="menuderoulant">
+                  <a href="#">Mes projets professionels </a> <!--Liens vers les sites pokémons et google-->
+                  <ul class="sous-menu">
+                    <li>
+                      <a href="Ricci.html">Projets en groupe</a>
+                    </li>
+                    <li>
+                      <a href="mes_sites.html">Mes sites</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menuderoulant">
+                  <a href="a_propos.html">A propos de moi</a>
+                  <ul class="sous-menu">
+                  </ul>
+                </li>
+              </ul>
+        </nav>
             <section class="images">
                 <div class="projets-header">
                     <h1 class="section-title"> Mes sites</h1>
@@ -54,7 +72,7 @@
                     </div>
                     <div class="image-right">
                         <h1>Mon premier site</h1>
-                        <p>C'est la toute première fois que je touchais au CSS et à l'HTML. J'y ai mis des heures pour un résultat qui m'était à l'époque très satisfaisant. Je me rappellerai toujours des sensations que j'ai ressentis à chaque fois que j'arrivais à aboutir à ce que je voulais faire. J'y ai appris énormement de notion mais surtout j'ai appris ce que je comptais faire: devenir web designeuse. Je n'arrivais plus à sortir ce rêve de ma tête et j'ai donc continué à en apprendre plus sur la manière de faire des sites. </p>
+                        <p>C'est la toute première fois que je touchais au CSS et à l'HTML. J'y ai mis des heures pour un résultat qui je trouvais à l'époque très satisfaisant. Je me rappellerai toujours des sensations que j'ai ressenties à chaque fois que j'arrivais à aboutir à ce que je voulais faire. J'y ai appris énormement de notions mais surtout j'ai appris ce que je comptais faire: devenir web designeuse. Je n'arrivais plus à sortir ce rêve de ma tête et j'ai donc continué à apprendre plus sur la manière de faire des sites. </p>
                             <a href="media/site/test de la page.html" target="_blank"><strong>cliquez ici pour voir</strong></a>
                     </div>
                 </div>
@@ -64,7 +82,7 @@
                     </div>
                     <div class="image-right">
                         <h1>La continuité</h1>
-                        <p>J'arrive enfin à avoir un résultat convenable. J'arrive à férer le HTML mais surtout le CSS pour le rendre plus agréableà l'oeil. J'ai créé ce site dans un exerccie pour en apprendre plus sur comment bien arranger un site. C'est un des premire site ou je commence à comprendre comment bien manupuler ces deux languages.</p>
+                        <p>J'arrive enfin à avoir un résultat convenable. J'arrive à faire le HTML mais surtout le CSS pour le rendre plus agréable à l'oeil. J'ai créé ce site dans un exercice pour en apprendre plus sur comment bien arranger un site. C'est un des premiers sites où je commence à comprendre comment bien manipuler ces deux languages.</p>
                         <a href="media/site/enfin_un_beau_site.html" target="_blank"><strong>cliquez ici pour voir</strong></a>
                     </div>
                 </div>
@@ -74,7 +92,7 @@
                     </div>
                     <div class="image-right">
                         <h1>Le Pokedex</h1>
-                        <p>Nous devions faire en groupe un site pokemon. J'ai adoré faire ce site. Trouver les bonnes idées et réussir à les excécuté. Nous devions manipuler l'HTML ,CSS et le JacaScript. Nous avions déjà une maquette donner par le proffesseur et nous devions l'améliorer. De mon côté j'ai réussi à mettre le bouton des évolutions, de la pokeball qui change d'image lorsqu'on passe le curseur dedans et globalement l'esthétique du site. Je n'ai jamais fait un site aussi complet et surtout complexe. Je suis très fière du rendu.</p>
+                        <p>Nous devions faire en groupe un site Pokemon. J'ai adoré faire ce site. Trouver les bonnes idées et réussir à les excécuter. Nous devions manipuler l'HTML ,CSS et le JacaScript. Nous avions déjà une maquette donner par le professeur et nous devions l'améliorer. De mon côté j'ai réussi à mettre le bouton des évolutions, de la Pokeball qui change d'image lorsqu'on passe le curseur dessus et globalement l'esthétique du site. Je n'ai jamais fait un site aussi complet et surtout complexe. Je suis très fière du rendu.</p>
                             <a href="media/site/pokemon/index.html" target="_blank"><strong>cliquez ici pour voir</strong></a>
                     </div>
                 </div>
