@@ -12,11 +12,11 @@ body{
 text-align: justify;
 }
 
-.ecran{
+.ecran {
   width: 100%;
   height: 100vh;
-  background-image: url(media/fond.png);
-  background-position: center;
+  background-image: url(media/bannerbcp.webp);
+  background-position: 80% center; /* Moins décalé vers la droite que "right center" */
   background-size: cover;
   display: flex;
   align-items: center;
